@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        background-image: url(6.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        background-color: white;
+        width: 300px;
+        height: 200px;
+        box-shadow: 0 0 10px palevioletred;
+        border-radius: 10px;
+    }
+
+    #timer{
+        width: 100%;
+        font-size: 68px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttons{
+       text-align: center;
+    }
+
+    button{
+        margin: o 10px;
+        /* border: none; */
+    }
+    button i{
+        font-size: 2rem;
+        padding: 10px;
+        color: white;
+    }
+    #play{
+        background-color: green;
+    }
+    
+    #pause{
+        background-color: orange;
+        
+    }
+    #reset{
+        background-color: red;
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="timer">
+            00:00:00
+        </div>
+        <div class="buttons">
+            <button id="startStopBtn"> 
+                <i class="fa-solid fa-play" id="play" id="pause"></i>
+            </button>
+
+            <button id="resetBtn">
+                <i class="fa-solid fa-arrow-rotate-left" id="reset"></i>
+            </button>
+        </div>
+    </div>
+    <script src="stop-wacth.js"></script>
+</body>
+</html>
